@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><title>Midterm</title>
+    <style>
+      #logo{
+        width: 120px;
+        height: 120px;
+        border: solid;
+        border-width: thick;
+        border-color: white;
+      }
+      #headpic{
+        width: 100%;
+      }
+      .active{
+        font-weight: bold;
+      }
+      #nav1,#nav2,#nav3,#nav4{
+        text-decoration: underline;
+      }
+      ul{
+        list-style: none;
+      }
+      #listhead{
+        font-size: larger;
+        border-bottom: solid;
+        text-shadow: 1px 1px #ffffff;
+      }
+      #eventsandhours{
+        background-image: url(background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      li{
+        text-shadow: 1px 1px #ff0202;
+      }
+      #hours1,#hours2,#hours3,#hours4{
+        color:rgb(0, 0, 0);
+        font-weight: 800;
+        text-shadow: 2px 1px #fa6161;
+      }
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10000;
+      }
+      #foot,#foot1,#foot2,#foot3{
+        font-family: Garamond, serif;
+        font-weight: 600;
+      }
+    </style>
+    <script>
+      window.addEventListener('scroll', function() {
+          var stickyElement = document.getElementById('sticky-element');
+          var bounding = stickyElement.getBoundingClientRect();
+
+          if (bounding.top <= 0) {
+              stickyElement.classList.add('sticky');
+          } else {
+              stickyElement.classList.remove('sticky');
+          }
+      });
+    </script>
+    <script src="https://kit.fontawesome.com/e6d7da39ab.js" crossorigin="anonymous"></script>\
+  </head>
+  <body>
+    <header>
+      <img src="rankheader.png" alt="" id="headpic">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="https://insideranken.org/ICS/" id="nav1">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="#" id="nav2">Bookstore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="https://insideranken.org/ICS/Finances/" id="nav3">Finances</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="https://insideranken.org/ICS/Student_Services/" id="nav4">Student Services</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+    </header>
+    <div id="eventsandhours" class="container-fluid border m-2 d-flex justify-content-evenly">
+      <div class="text-center">
+        <img src="rankenlogo.png" alt="" id="logo" class="align-self-center">
+        <p id="hours1"><strong>Bookstore Hours</strong></p>
+        <p id="hours2"><strong>Monday - Thursday:</strong>  7:30am - 6:00pm</p>
+        <p id="hours3"><strong>Friday:</strong>  7:30am - 3:30pm</p>
+        <p id="hours4"><strong>Saturday - Sunday:  Closed</strong></p>
+      </div>
+      <ul id="upcoming-events">
+        <li id="listhead" class="text-danger"><strong>Student Upcoming Events:</strong></li>
+        <li class="text-white"><strong>June 19th: </strong> All school Holiday/All Locations Closed</li>
+        <li class="text-white"><strong>July 3rd: </strong> Online II Classes Begin</li>
+        <li class="text-white"><strong>July 3rd-4th: </strong> All School Holiday/All Locations Closed</li>
+        <li class="text-white"><strong>August 20th: </strong> Summer Semester Ends (Online)</li>
+        <li class="text-white"><strong>August 21st: </strong> Summer Semester Ends (M/W Eve)</li>
+        <li class="text-white"><strong>August 22nd: </strong> Summer Semester Ends (Day, T/R Eve)</li>
+        <li class="text-white"><strong>August 28th: </strong> Fall Semester Begins (Online, Day, M/W Eve)</li>
+        <li class="text-white"><strong>August 29th: </strong> Fall Semester Begins (T/R Eve)</li>
+      </ul>
+    </div>
+    <div class="container text-center border-bottom border-danger border-4">
+      <h1>Find everything you need for</h1><h1>continuing your education</h1>
+    </div>
+    <div class="text-center">
+      <p class="fs-3 text-danger fw-bold">The Summer Bookstore accounts are open.</p>
+      <p class="fs-4 fw-bold">Watch your Ranken email for information on books.</p>
+    </div>
+    <div>
+      <p class="fs-5 text-decoration-underline m-4">Summer 2023 Student Book and Tools process:</p>
+      <p class="m-4">Once the student is authorized then the student will go to the Registrar&apos;s office to get a copy of their schedule to take to the Bookstore to receive their books or tools they may need. Students at other campuses will reach out to Becky Mercurio or Patrick Glynn in the admissions offices to receive their required materials. All General Education classes will have digital books. See Bookstore for any questions.</p>
+    </div>
+    <div>
+      <nav id="sticky-element" class="navbar navbar-expand navbar-dark bg-danger">
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="navbar-nav">
+              <a class="nav-link" href="#">Top</a>
+              <a class="nav-link" href="#clothes">Clothing</a>
+              <a class="nav-link" href="#gear">Gear</a>
+              <a class="nav-link" href="#tools">Tools and Class Material</a>
+              <a class="nav-link" href="#calculate">Checkout</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <section>
+      <form>
+      <div id="clothes" class="container mt-5"><h2 class="text-danger">Clothes</h2>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="clothes/bluetshirt" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/purpletshirt" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/redtshirt" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/lightgreytshirt" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/darkgreytshirt" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/navytshirt" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/maroontshirt" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Ranken T-Shirt</h5>
+                <h6>Price: $10.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant" name="quant">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Color</p>
+                  <select id="tshirt" name="tshirt">
+                    <option value="red"></option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="lightgrey">Light Grey</option>
+                    <option value="maroon">Maroon</option>
+                    <option value="purple">Purple</option>
+                    <option value="dark">Dark Grey</option>
+                    <option value="navy">Navy</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Size</p>
+                  <select id="tshirt2" name="tshirt2">
+                    <option value="red"></option>
+                    <option value="tsm">Small</option>
+                    <option value="canada">Medium</option>
+                    <option value="uk">Large</option>
+                    <option value="australia">XL</option>
+                    <option value="japan">XXL</option>
+                    <option value="canada">3XL</option>
+                    <option value="uk">4XL</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="clothes/bluepolo" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/pic111.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/redpolo" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/pic321.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/navypolo" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/maroonpolo" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Ranken Polo</h5>
+                <h6>Price: $25.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant1" name="quant1">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Color</p>
+                  <select id="polo" name="polo">
+                    <option value="red"></option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="lightgrey">Light Grey</option>
+                    <option value="maroon">Maroon</option>
+                    <option value="purple">Purple</option>
+                    <option value="dark">Dark Grey</option>
+                    <option value="navy">Navy</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Size</p>
+                  <select id="polo2" name="polo2">
+                    <option value="red"></option>
+                    <option value="tsm">Small</option>
+                    <option value="canada">Medium</option>
+                    <option value="uk">Large</option>
+                    <option value="australia">XL</option>
+                    <option value="japan">XXL</option>
+                    <option value="canada">3XL</option>
+                    <option value="uk">4XL</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="clothes/navylongpolo" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/greylongpolo" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/redlongpolo" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/blacklongpolo" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Ranken Long-Sleeve Polo</h5>
+                <h6>Price: $25.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant3" name="quant3">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Color</p>
+                  <select id="longpolo" name="longpolo">
+                    <option value="red"></option>
+                    <option value="red">Red</option>
+                    <option value="blue">Black</option>
+                    <option value="dark">Grey</option>
+                    <option value="navy">Navy</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Size</p>
+                  <select id="longpolo2" name="longpolo2">
+                    <option value="red"></option>
+                    <option value="tsm">Small</option>
+                    <option value="canada">Medium</option>
+                    <option value="uk">Large</option>
+                    <option value="australia">XL</option>
+                    <option value="japan">XXL</option>
+                    <option value="canada">3XL</option>
+                    <option value="uk">4XL</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div id="carouselExampleControls4" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="clothes/redwhitehat" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/blackgreyhat" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/navyhat" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/greyhat" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/blackbluehat" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/redblackhat" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/lightgreyhat" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/redhat" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Ranken Hats</h5>
+                <h6>Price: $5.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant4" name="quant4">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Style</p>
+                  <select id="hats" name="hats">
+                    <option value="red"></option>
+                    <option value="red">Red/White</option>
+                    <option value="blue">Black/White</option>
+                    <option value="lightgrey">Navy</option>
+                    <option value="maroon">Black/Blue</option>
+                    <option value="purple">Red/Black</option>
+                    <option value="dark">Grey (Logo)</option>
+                    <option value="navy">Grey (Text)</option>
+                    <option value="navy">Red</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div id="carouselExampleControls5" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="clothes/blackcoat" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/navycoat" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/lightgreycoat" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/greyzipupjacket" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Ranken Winter Coats</h5>
+                <h6>Price: $40.00-50.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant5" name="quant5">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Color</p>
+                  <select id="coat" name="coat">
+                    <option value="red"></option>
+                    <option value="red">Black</option>
+                    <option value="blue">Navy</option>
+                    <option value="lightgrey">Light Grey</option>
+                    <option value="lightgrey">Grey Zip-Up Jacket</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Size</p>
+                  <select id="coat2" name="coat2">
+                    <option value="red"></option>
+                    <option value="tsm">Small (40)</option>
+                    <option value="canada">Medium (40)</option>
+                    <option value="uk">Large (45)</option>
+                    <option value="australia">XL (50)</option>
+                    <option value="japan">XXL (50)</option>
+                    <option value="canada">3XL (50)</option>
+                    <option value="uk">4XL (50)</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div id="carouselExampleControls6" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="clothes/automotivenavy" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/automotivegrey" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Ranken Automotive Short Sleeve</h5>
+                <h6>Price: $45.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant6" name="quant6">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Color</p>
+                  <select id="autoshort" name="autoshort">
+                    <option value="red"></option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Size</p>
+                  <select id="autoshort2" name="autoshort2">
+                    <option value="red"></option>
+                    <option value="tsm">Small</option>
+                    <option value="canada">Medium</option>
+                    <option value="uk">Large</option>
+                    <option value="australia">XL</option>
+                    <option value="japan">XXL</option>
+                    <option value="canada">3XL</option>
+                    <option value="uk">4XL</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div id="carouselExampleControls7" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="clothes/navysweater" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/redsweater" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/purplesweater" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/blacksweater" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/bluesweater" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/greysweater" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls7" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls7" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Ranken Sweater</h5>
+                <h6>Price: $20</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant7" name="quant7">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Color</p>
+                  <select id="sweater" name="sweater">
+                    <option value="red"></option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="lightgrey">Grey</option>
+                    <option value="purple">Purple</option>
+                    <option value="dark">Black</option>
+                    <option value="navy">Navy</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Size</p>
+                  <select id="sweater2" name="sweater2">
+                    <option value="red"></option>
+                    <option value="tsm">Small</option>
+                    <option value="canada">Medium</option>
+                    <option value="uk">Large</option>
+                    <option value="australia">XL</option>
+                    <option value="japan">XXL</option>
+                    <option value="canada">3XL</option>
+                    <option value="uk">4XL</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div id="carouselExampleControls8" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="clothes/redquarterzipdryfit" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/whitequarterzipdryfit" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/maroonquarterzipdryfit" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/navyquarterzipdryfit" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/blackquarterzipdryfit" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/greyquarterzipdryfit" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/purplequarterzipdryfit" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls8" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls8" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Ranken Quarter Zip (Dry Fit)</h5>
+                <h6>Price: $25</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant8" name="quant8">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Color</p>
+                  <select id="quarterzip" name="quarterzip">
+                    <option value="red"></option>
+                    <option value="red">Red</option>
+                    <option value="blue">White</option>
+                    <option value="lightgrey">Grey</option>
+                    <option value="maroon">Maroon</option>
+                    <option value="purple">Purple</option>
+                    <option value="dark">Black</option>
+                    <option value="navy">Navy</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Size</p>
+                  <select id="quarterzip2" name="quarterzip2">
+                    <option value="red"></option>
+                    <option value="tsm">Small</option>
+                    <option value="canada">Medium</option>
+                    <option value="uk">Large</option>
+                    <option value="australia">XL</option>
+                    <option value="japan">XXL</option>
+                    <option value="canada">3XL</option>
+                    <option value="uk">4XL</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div id="carouselExampleControls9" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="clothes/redquarterthick" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/whitequarterthick" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/maroonquarterthick" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/greyquarterthick" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/blackquarterthick" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls9" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls9" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Ranken Quarter Zip (Thick)</h5>
+                <h6>Price: $30.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant9" name="quant9">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Color</p>
+                  <select id="quarterzipthick" name="quarterzipthick">
+                    <option value="red"></option>
+                    <option value="red">Red</option>
+                    <option value="blue">White</option>
+                    <option value="lightgrey">Grey</option>
+                    <option value="maroon">Maroon</option>
+                    <option value="dark">Black</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Size</p>
+                  <select id="quarterzipthick2" name="quarterzipthick2">
+                    <option value="red"></option>
+                    <option value="tsm">Small</option>
+                    <option value="canada">Medium</option>
+                    <option value="uk">Large</option>
+                    <option value="australia">XL</option>
+                    <option value="japan">XXL</option>
+                    <option value="canada">3XL</option>
+                    <option value="uk">4XL</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div id="carouselExampleControls10" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="clothes/redwhitehoodie" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/redblackhoodie" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/blackhoodie" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/olivehoodie" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/tealhoodie" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/greyhoodie" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/lightnavyhoodie" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="clothes/navyhoodie" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls10" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls10" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Ranken Hoodie</h5>
+                <h6>Price: $25.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant10" name="quant10">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Color</p>
+                  <select id="hoodie" name="hoodie">
+                    <option value="red"></option>
+                    <option value="red">Red (White Wording)</option>
+                    <option value="red">Red (Black Wording)</option>
+                    <option value="blue">Black</option>
+                    <option value="lightgrey">Grey</option>
+                    <option value="maroon">Olive</option>
+                    <option value="purple">Teal</option>
+                    <option value="dark">Light Navy</option>
+                    <option value="navy">Navy</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Size</p>
+                  <select id="polo2" name="polo2">
+                    <option value="red"></option>
+                    <option value="tsm">Small</option>
+                    <option value="canada">Medium</option>
+                    <option value="uk">Large</option>
+                    <option value="australia">XL</option>
+                    <option value="japan">XXL</option>
+                    <option value="canada">3XL</option>
+                    <option value="uk">4XL</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="clothes/autojacket" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Ranken Automotive Jacket</h5>
+                <h6>Price: $45.00-50.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant11" name="quant11">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Size</p>
+                  <select id="autojacket" name="autojacket">
+                    <option value="red"></option>
+                    <option value="tsm">Small (45)</option>
+                    <option value="canada">Medium (45)</option>
+                    <option value="uk">Large (50)</option>
+                    <option value="australia">XL (50)</option>
+                    <option value="japan">XXL (50)</option>
+                    <option value="canada">3XL (50)</option>
+                    <option value="uk">4XL (50)</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="gear" class="container mt-5"><h2 class="text-danger">Gear</h2>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div id="carouselExampleControls11" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="gear/blacklanyard" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="gear/blacklanyard" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls11" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls11" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Ranken Lanyard</h5>
+                <h6>Price: $3.50</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant12" name="quant12">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Color</p>
+                  <select id="lanyard" name="lanyard">
+                    <option value="red"></option>
+                    <option value="red">Red</option>
+                    <option value="blue">Black</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="gear/platecover" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Ranken License-Plate Cover</h5>
+                <h6>Price: $3.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant13" name="quant13">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="gear/tumbler" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Ranken Tumbler Mug</h5>
+                <h6>Price: $8.50</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant14" name="quant14">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="gear/idclip" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Ranken ID Clip</h5>
+                <h6>Price: $0.50</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant15" name="quant15">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tools" class="container mt-5"><h2 class="text-danger">Tools and Class Material</h2>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="tools/dewaltwrench" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Dewalt Wrench</h5>
+                <h6>Price: $51.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant16" name="quant16">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="tools/stanleywrench" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Stanley Wrench</h5>
+                <h6>Price: $51.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant17" name="quant17">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="tools/canvascarrier" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Architecture Canvas Carrier</h5>
+                <h6>Price: $3.25</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant18" name="quant18">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="tools/rankenstrapfolder" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Ranken Strap Folder</h5>
+                <h6>Price: $17.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant19" name="quant19">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="tools/shuttleartmarkers" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Shuttle Art Marker-Bag</h5>
+                <h6>Price: $28.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant20" name="quant20">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="tools/m510mouse" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">M510 Mouse</h5>
+                <h6>Price: $32.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant21" name="quant21">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="tools/trackmanmouse" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Trackman Mouse</h5>
+                <h6>Price: $30.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant22" name="quant22">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="tools/skrewdriver" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Flathead Screwdriver</h5>
+                <h6>Price: $25.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant23" name="quant23">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="tools/skrewdriver151" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">15-in-1 Screwdriver</h5>
+                <h6>Price: $26.50</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant24" name="quant24">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="tools/dewaltdrill" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Dewalt Drill</h5>
+                <h6>Price: $110.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant25" name="quant25">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="tools/milwawkeedrill" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Milwawkee Drill</h5>
+                <h6>Price: $180.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant26" name="quant26">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="tools/makitadrill" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Mikita Drill</h5>
+                <h6>Price: $150.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant27" name="quant27">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="tools/metabodrill" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Metabo Drill</h5>
+                <h6>Price: $195.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant28" name="quant28">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="tools/sharptoothsaw" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Stanley Sharp-tooth Saw</h5>
+                <h6>Price: $39.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant29" name="quant29">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="tools/weldinghelmet" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Welding Helmet</h5>
+                <h6>Price: $133.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant30" name="quant30">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="tools/hammer" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Ball-peen Hammer</h5>
+                <h6>Price: $40.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant31" name="quant31">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="tools/toolchest" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">Matco Tools Toolchest</h5>
+                <h6>Price: $250.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant32" name="quant32">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div id="carouselExampleControls12" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="tools/redhvachose" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="tools/yellowhvachose" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls12" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls12" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title border-bottom border-secondary">HVAC Hose</h5>
+                <h6>Price: $5.00</h6>
+              <div class="d-flex justify-content-evenly">
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5 mx-6">Quantity</p>
+                  <select id="quant33" name="quant33">
+                    <option value="none"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <p class="text-danger fw-bold fs-5">Select Color</p>
+                  <select id="hvac" name="hvac">
+                    <option value="red"></option>
+                    <option value="red">Red</option>
+                    <option value="blue">Yellow</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center m-4">
+        <button class="bg-danger text-light border-danger" type="submit">Submit</button>
+      </div>
+      </form>
+    </section>
+    <section id="calculate" class="container border">
+      <form>
+        <p class="text-decoration-underline">Select Pickup Location</p>
+        <input type="radio" id="option1" name="options" value="option1">
+        <label for="option1">St Louis</label><br>
+        <input type="radio" id="option2" name="options" value="option2">
+        <label for="option2">Wentzville</label><br>
+        <input type="radio" id="option3" name="options" value="option3">
+        <label for="option3">Perryville</label><br>
+        <p class="text-danger fs-6 fst-italic">&ast;please allow 2 business days for pickup at Wentzville and Perryville</p><br><br>
+        <p class="text-decoration-underline fs-3">Shipping Address Information:</p>
+        <label for="textInput"><strong>First Name:</strong></label>
+          <input type="text" id="textInput" name="textInput"><br>
+        <label for="textInput2"><strong>Last Name:</strong></label>
+          <input type="text" id="textInput2" name="textInput2"><br><br>
+        <label for="textInput3"><strong>Street Address:</strong></label>
+          <input type="text" id="textInput3" name="textInput3"><br><br>
+        <label for="textInput4"><strong>City:</strong></label>
+          <input type="text" id="textInput4" name="textInput4"><br>
+        <label for="textInput5"><strong>State:</strong>(abbreviation)</label>
+          <input type="text" id="textInput5" name="textInput5"><br><br>
+        <label for="textInput6"><strong>Zip Code:</strong></label>
+          <input type="text" id="textInput6" name="textInput6"><br>
+        <label for="textInput7"><strong>Phone Number:</strong></label>
+          <input type="text" id="textInput7" name="textInput7"><br><br>
+        <label for="textInput8"><strong>Coupon Code:</strong></label>
+          <input type="text" id="textInput8" name="textInput8"><br><br>
+        <label for="textInput9"><strong>Email Receipt to:</strong></label>
+          <input type="text" id="textInput9" name="textInput9"><br>
+        <button class="bg-danger text-light m-4 border-danger" type="submit">Next&emsp;<i class="fa-solid fa-arrow-right-long"></i>
+          <i class="fa-solid fa-bag-shopping"></i></button>
+      </form>
+    </section>
+    <footer>
+      <div id="foot" class="container border-top border-4 border-danger">
+        <h2 id="footfont" class="text-center border-bottom border-4 border-dark">Ranken is committed to providing the most current technology instruction. All of Ranken&apos;s tools and books are examined to make sure that our students are beginning their careers with the most up-to-date equipment that we can provide.</h2>
+      </div>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="col mb-4">
+            <div id="foot1" class="card border-light">
+              <h3 class="text-danger text-decoration-underline">Location:</h3>
+              <p>Ranken Technical College Bookstore<br>
+                4431 Finney Ave.  Ground Floor<br>
+                St. Louis, MO 63113<br><br>
+                <a href="tel:+3142864820">(314)&#45;286&#45;4820</a></p>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div id="foot2" class="card border-light">
+              <h3 class="text-danger text-decoration-underline">Hours:</h3>
+              <p><strong>Monday &#45; Thursday:</strong> 7:30 a.m. &#45; 6:00 p.m.</p><br>
+              <p><strong>Friday:</strong> 7:30 a.m. &#45; 1:30 p.m</p><br>
+              <p><strong>Saturday &#45; Sunday:</strong> Closed</p>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div id="foot3" class="card border-light">
+              <h3 class="text-danger text-decoration-underline">Contact:</h3>
+              <p><strong>Shawn Bowers,</strong> Director<br>
+                <a href="tel:+3142864823">(314)&#45;286&#45;4823</a><br>
+              <strong>Amber Williams,</strong> Assistant Manager<br>
+              <a href="tel:+3142864825">(314)&#45;286&#45;4825</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+</html>
